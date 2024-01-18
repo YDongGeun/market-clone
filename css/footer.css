@@ -48,6 +48,6 @@ footer {
 	width: 30px;
 }
 
-.footer-icons:hover {
+.footer-icons:hover .footer-icons__img{
 	animation: 2s icons-둥둥;
 }
