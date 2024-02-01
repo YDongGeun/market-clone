@@ -3,6 +3,7 @@ const form = document.getElementById("write-form");
 const handleSubmitForm = async (event) => {
   event.preventDefault();
   const body = new FormData(form);
+  body.append("insertAt", new Date().getTime());
   try {
     const res = await fetch("/items", {
       method: "POST",
@@ -16,3 +17,4 @@ const handleSubmitForm = async (event) => {
 };
 
 form.addEventListener("submit", handleSubmitForm);
+
