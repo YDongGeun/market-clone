@@ -29,6 +29,11 @@ footer {
   transform: scale(0.8);
 }
 
+button .footer-icons__desc {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
 @keyframes icons-up {
   0% {
     transform: translateY(0px);
